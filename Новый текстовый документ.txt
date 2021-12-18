@@ -1,0 +1,182 @@
+Revealator.effects_padding = '-800';
+var i = 0;
+
+$(window).on('load', function(){
+  
+  scroll();   
+  interactMobileMenu();  
+  interactFilmForm(); 
+  
+});
+
+function scroll(){
+  $('.icon').smoothScroll();   
+};
+
+function interactMobileMenu(){
+  $('.icon-menu').on('click', showMobileMenu);
+  $('.menu_cancel').on('click', closeMobileMenu);
+  $(window).resize(checkWindowSize);  
+};
+
+function interactFilmForm(){
+  $('.add_film').on('click', showFilmForm);
+  $('.film_cancel').on('click', closeFilmForm);
+  $('#back').on('click', closeFilmForm);    
+  $('#filmSend').on('click', validateFilm);   
+  $('#film_form').on('click', checkClick); 
+  
+  $('#filmName').on('focus', function(){
+    alert('dsf');
+  });
+  
+   $('#filmName').on('blur', function(){
+    alert('123');
+  });
+  
+};
+
+
+function showMobileMenu(){
+  $(this).addClass('visibility_none'); 
+  $('.mobile_menu').addClass('visibility_block');
+  $('.menu_cancel').addClass('visibility_block');  
+};
+
+function closeMobileMenu(){
+  $(this).removeClass('visibility_block'); 
+  $('.mobile_menu').removeClass('visibility_block');
+  $('.icon-menu').removeClass('visibility_none');
+};
+
+function checkWindowSize(){
+  if ($(document).width() > 883){
+    $('.icon-menu').removeClass('visibility_block');
+    $('.mobile_menu').removeClass('visibility_block');
+    $('.menu_cancel').removeClass('visibility_block');
+  }
+  else{ 
+    if ($('.menu_cancel').css('display') == 'none'){
+      $('.icon-menu').removeClass('visibility_none');
+    }
+  };
+};
+
+
+function showFilmForm(){
+  $('#film_form').addClass('visibility_block'); 
+  $('#back').css('display', 'block'); 
+  if ($(document).width() < 884){
+    $('.icon-menu').removeClass('visibility_none');
+    $('.mobile_menu').removeClass('visibility_block');
+    $('.menu_cancel').removeClass('visibility_block');
+  };  
+};
+
+function closeFilmForm(){
+  $('#film_form').removeClass('visibility_block');
+  $('#back').css('display', 'none');
+};
+
+function validateFilm(event) {
+  checkInput($('#url'));
+  checkInput($('#filmName'));
+  checkInput($('#description'));
+  if (checkInput($('#url')) && checkInput($('#filmName')) && checkInput($('#description'))){    
+    event.preventDefault();
+    $('#filmSend').on('click', closeFilmForm());
+    addNewFilm();
+  };
+};
+
+function checkInput(input){
+  if (input.val() == ''){  
+    $(input).addClass('border_red').removeClass('border_gray'); 
+    return false;
+  } else {
+    $(input).addClass('border_gray').removeClass('border_red');
+    return true;
+  };  
+};
+
+function checkClick(){
+  if ((event.target == $('#url')[0]) || (event.target == $('#filmName')[0]) 
+     || (event.target == $('#description')[0])){
+    clickInputFilm(event.target);
+  }
+  changeBorderColor(event.target);
+  
+ //checkFocus($('#url'));
+ //checkFocus($('#filmName'));
+ //checkFocus($('#description'));
+}
+
+function clickInputFilm(input){
+  if ($(input).hasClass('border_red')){
+    $(input).removeClass('border_red');
+  }
+};
+
+function changeBorderColor(input){
+  checkBorderColor(input, $('#url'));
+  checkBorderColor(input, $('#filmName'));
+  checkBorderColor(input, $('#description'));
+  if ($(input).hasClass('border_gray')){
+    $(input).addClass('border_green').removeClass('border_gray');
+  }
+};
+
+function checkBorderColor(input, block){
+  if ((input != block) && ($(input).hasClass('border_green'))){
+    block.addClass('border_gray').removeClass('border_green');
+  };    
+};
+
+function checkFocus(input){  
+  input.on('focus', function(){
+    input.removeClass('border_red');
+  });
+};
+
+function addNewFilm(){
+  
+  var film = $('<div/>');
+  film.appendTo('div#newFilms');
+  film.addClass('new_film');
+  film.addClass('film_block');
+  
+  var img = $('<img>');
+  img.appendTo($(film));
+  img.attr('src', $('#url').val());
+  img.addClass('film_photo');
+  
+  var title = $('<h3>' + $('#filmName').val() + '</h3>');
+  title.appendTo($(film));
+  title.addClass('film_title');
+  
+  var text = $('<p>' + $('#description').val() + '</p>');
+  text.appendTo($(film));
+  text.addClass('film_text');  
+  
+  i += 1;  
+  if ((i % 4) == 1){
+    film.addClass('first');
+  };
+  
+  if ((i % 4) == 2){
+    film.addClass('second');
+  };
+  
+  if ((i % 4) == 3){
+    film.addClass('third');
+  };
+  
+  if ((i % 4) == 0){
+    film.addClass('fourth');
+  };
+    
+  $('#url').val('');
+  $('#filmName').val('');
+  $('#description').val('');
+  
+}

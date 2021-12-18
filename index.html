@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/> 
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/adaptive_style.css" />
+    <link rel="stylesheet" href="font/fontello/animation.css" type="text/css" />
+    <link rel="stylesheet" href="font/fontello/fontello.css" type="text/css" />
+    <link rel="stylesheet" href="font/fontello/fontello-codes.css" type="text/css" />
+    <link rel="stylesheet" href="font/fontello/fontello-embedded.css" type="text/css" />
+    <link rel="stylesheet" href="font/fontello/fontello-ie7.css" type="text/css" />
+    <link rel="stylesheet" href="font/fontello/fontello-ie7-codes.css" type="text/css" />
+    <title>About me</title>
+    <script src="jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="jQuery/fm.revealator.jquery.min.css">
+    <script src="jQuery/jquery.smooth-scroll.min.js"></script>
+    <script src="jQuery/fm.revealator.jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <buttom class="icon-menu"></buttom>
+      <div class="menu_cancel" id="menu_cancel"></div>
+      <span class="menu_title">Меню</span>
+      <ul class="mobile_menu"> 
+        <!--<li><a class="menu_item icon" href="#mainTitle"> Обо мне</a></li> -->
+        <!--<li><a class="menu_item icon" href="#mainHobby"> Мои хобби</a></li> -->
+        <li><a class="menu_item icon" href="contacts.html"> Контакты</a></li>
+        <li><a class="menu_item icon add_film" href="services.html"> Наши услуги</a></li>
+      </ul>
+      <ul class="menu">        
+        <!--<li class="menu_item"><a id = "user" class="icon-user icon" href="about.html">О нас</a></li>-->
+        <li class="menu_item"><a class="icon-heart icon" href="contacts.html">Контакты</a></li>
+        <li class="menu_item"><a class="icon-videocam icon" href="services.html"> Наши услуги</a></li>
+        <!--<li class="menu_item"><a class="icon-plus icon add_film" href="#"> Добавить фильм</a></li> -->
+      </ul>
+    </header> 
+    <form id="film_form" class="film_form">
+      <div class="title">
+        <h2 class="add_title">Добавить фильм</h2> 
+        <div class="clear"></div>
+      </div>
+      <div class="film_cancel" id="filmCanсel"></div>
+      <div class="clear"></div>
+      <div class="form_input">
+        <div class="url">
+          <label for="url">URL картинки<span class="star">&#42;</span></label>
+          <input type="text" id ="url" name="url" class="input" required />
+        </div>
+        <div class="film_name">
+          <label for="filmName">Название фильма<span class="star">&#42;</span></label>
+          <input type="text" id="filmName" name="film_name" class="input" required />
+        </div>
+        <div class="description">
+          <label for="description">Описание фильма<span class="star">&#42;</span></label>
+          <textarea id="description" name="description" class="input" required></textarea>
+        </div>
+        <input class="film_send" id="filmSend" type="submit" value="Отправить" />
+      </div>	  
+    </form>
+    <div class="main_container">
+      <div class="top">
+        <div class="photo"><img class="me" src="image/unnamed.jpg" width="400" title="it's logo of company" /></div>
+        <div class="quote">      
+          <blockquote>Счастье — самая неопределенная и дорогостоящая вещь на свете.</blockquote>
+          <span class="quote_subtitle">&mdash; Эрих Мария Ремарк</span>
+        </div>
+        <div class="clear"></div>    
+      </div>    
+      <div class="lists">
+        <div class="poet_list">
+          <span class="list_title">Наши сотрудники:</span>
+          <ul class="list">
+            <li>Э. Асадов</li>
+            <li>С. Есенин</li>
+            <li>В. Маяковский</li>
+            <li>И. Бродский</li>
+          </ul>
+        </div>
+        <div class="film_list">
+          <span class="list_title">Наши достижения:</span>
+          <ol class="list">
+            <li>Интерстеллар</li>
+            <li>Шерлок Холмс</li>
+            <li>Живое</li>
+            <li>Иллюзия обмана</li>
+          </ol>
+        </div>
+      </div>     
+      <div class="info">
+        <div class="about_me">
+          <h1 class="name_title" id="mainTitle">VolgatechMusic</h1>
+          <hr class="line" />
+          <div class="clear"></div>
+          <!--<p class="about_me_text revealator-position-partially-below revealator-fade revealator-slideup revealator-once">
+            Бла бла бла
+          </p>-->
+        </div>
+        <div class="hobby">
+          <h2 class="hobby_title" id="mainHobby">О нас</h2>
+          <p class="hobby_text revealator-position-partially-below revealator-fade revealator-slideup revealator-once">
+            Бла бла бла бла
+          </p>
+        </div>
+        <a class="link" id="link" href="#form">
+            <span class="send_me_text">Свяжитесь с нами</span> &rarr;
+        </a>
+      </div> 
+      <div class="double_lists">
+        <div class="poet_list">
+          <span class="list_title">Наши сотрудники:</span>
+          <ul class="list">
+            <li>Э. Асадов</li>
+            <li>С. Есенин</li>
+            <li>В. Маяковский</li>
+            <li>И. Бродский</li>
+          </ul>
+        </div>
+        <div class="film_list">
+          <span class="list_title">Наши достижения:</span>
+          <ol class="list">
+            <li>Интерстеллар</li>
+            <li>Шерлок Холмс</li>
+            <li>Живое</li>
+            <li>Иллюзия обмана</li>
+          </ol>
+        </div>
+      </div>
+      <div class="clear"></div> 
+    </div>
+    <div class="main_films revealator-position-partially-below revealator-fade revealator-slideup revealator-once">
+      <div class="films" id="filmBlock">
+        <h2 class="films_title" id="mainFilms">Наши партнеры</h2>
+        <div class="interstellar film_block first_of_all">
+          <img class="film_photo" src="image/interstellar.jpg" alt="interstellar" />
+          <h3 class="film_title">Интерстеллар</h3>
+          <p class="film_text">
+            Наше время на Земле подошло к концу, команда исследователей берет на себя самую важную миссию в истории человечества; путешествуя за пределами нашей галактики, чтобы узнать есть ли у человечества будущее среди звезд.
+          </p>
+        </div>
+        <div class="sherlock film_block second">
+          <img class="film_photo" src="image/sherlock.jpg" alt="sherlock" />
+          <h3 class="film_title">Шерлок Холмс</h3>
+          <p class="film_text">
+            Сюжет основан на произведениях сэра Артура Конан Дойля о детективе Шерлоке Холмсе, однако действие происходит в наши дни.
+          </p>
+        </div>
+        <div class="life film_block third">
+          <img class="film_photo" src="image/life.jpg" alt="life" />
+          <h3 class="film_title">Живое</h3> 
+          <p class="film_text">
+            Группа исследователей с международного космического корабля обнаруживает жизнь на Марсе. Они еще не подозревают, какие события повлечет за собой их открытие.
+          </p>
+        </div>
+        <div class="illusion film_block fourth" id="illusion">
+          <img class="film_photo" src="image/illusion.jpg" alt="illusion" />
+          <h3 class="film_title">Иллюзия обмана</h3>
+          <p class="film_text">
+            Команда лучших иллюзионистов мира проворачивает дерзкие ограбления прямо во время своих шоу, играя  в кошки-мышки с агентами ФБР.
+          </p>
+        </div>
+        <div class="clear"></div>
+        <div class="more_films" id="moreFilms">
+          <div class="harry film_block first">
+            <img class="film_photo" src="image/harry.jpg" alt="harry" />
+            <h3 class="film_title">Гарри Поттер</h3>
+            <p class="film_text">
+              Книги представляют собой хронику приключений юного волшебника Гарри Поттера, а также его друзей Рона Уизли и Гермионы Грейнджер, обучающихся в школе чародейства и волшебства Хогвартс.
+            </p>
+          </div>
+          <div class="gifted film_block second">
+            <img class="film_photo" src="image/gifted.jpg" alt="illusion" />
+            <h3 class="film_title">Одаренная</h3>
+            <p class="film_text">
+              Фрэнк Адлер воспитывает в одиночку свою необычайно одаренную племянницу Мэри. Но планы парня о спокойной школьной жизни для девочки рушатся, когда о математических способностях ребенка узнает грозная мать Фрэнка. 
+            </p>
+          </div>
+          <div class="passengers film_block third">
+            <img class="film_photo" src="image/passengers.jpg" alt="passengers" />
+            <h3 class="film_title">Пассажиры</h3>
+            <p class="film_text">
+              Космический корабль с 5,000 пассажиров на борту, погруженных на время полета в искусственный сон, держит курс на планету, которая станет для них новым домом. 
+            </p>
+          </div>
+          <div class="beauty film_block fourth">
+            <img class="film_photo" src="image/beauty.jpg" alt="beauty" />
+            <h3 class="film_title">Красавица и чудовище</h3>
+            <p class="film_text">
+              Обозлённая Волшебница превратила принца Адама в отвратительное чудовище за то, что тот был злым, самовлюблённым и грубым. Чтобы снять чары с себя и слуг своего замка, ему необходимо научиться быть добрым, любить и быть любимым.
+            </p>
+          </div> 
+          <div class="clear"></div>
+        </div>        
+        <div id="newFilms"></div>
+        <div class="clear"></div>
+        <a class="films_link" id="filmsLink" href="#">Все фильмы</a>
+      </div>
+    </div>
+    <form id="form">      
+      <div class="title">
+        <hr class="left_line" />
+        <h2>Напиши мне</h2>
+        <hr class="right_line" />  
+        <div class="clear"></div>
+      </div>
+      <div class="cancel" id="canсel"></div>
+      <div class="clear"></div>
+      <div class="form_input">
+        <div class="name">
+          <label for="name">Ваше имя<span class="star">&#42;</span></label>
+          <input type="text" id ="name" name="name" class="input" required />
+        </div>
+        <div class="email">
+          <label for="email">Ваш email<span class="star">&#42;</span></label>
+          <input type="text" id="email" name="email" class="input" required />
+        </div>
+        <div class="country">
+          <label>Откуда вы?</label>
+          <select name="country" class="input">
+            <option value="Россия">Россия</option> 
+            <option value="Украина">Украина</option> 
+            <option value="Беларусь">Беларусь</option> 
+          </select> 
+        </div>
+        <div class="radio">
+          <label class="sex">Ваш пол</label>
+          <input type="radio" id="men" name="sex" value="мужской" />
+          <label for="men" class="men">Мужской</label>
+          <input type="radio" id="women" name="sex" value="женский" />
+          <label for="women" class="women">Женский</label>
+        </div>
+        <div class="comment">
+          <label for="comment">Ваше сообщение<span class="star">&#42;</span></label>
+          <textarea id="comment" name="comment" class="input" required></textarea>
+        </div>
+        <input class="send_button" id="sendButton" type="submit" value="Отправить" />
+      </div>
+    </form>    
+    <footer>
+      <span>
+        &copy; 2006-2018 Поволжский государственный технологический университет, ФГБОУ ВО &laquo;ПГТУ&raquo;
+      </span>
+    </footer> 	   
+    <div class="gray_background" id="back"></div>	  
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/scriptJQ.js"></script>
+  </body>
+</html>

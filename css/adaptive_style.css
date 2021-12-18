@@ -1,0 +1,667 @@
+@media screen and (min-width: 1061px) 
+{
+  .double_lists,
+  .icon-menu
+  {
+    display: none;
+  } 
+}
+  
+@media screen and (max-width: 1260px) and (min-width: 900px)
+{      
+  .double_lists,
+  .icon-menu
+  {
+    display: none;
+  }
+  
+  .first,
+  .third
+  {
+    clear: both;
+    margin-left: 0;
+  }
+
+  .film_block
+  {
+    margin-top: 30px;
+  }
+  
+  .interstellar,
+  .sherlock
+  {
+    margin-top: 0;
+  }
+  
+  .films
+  {
+    width: 850px;
+    margin: 0 auto;
+  }
+  
+  .second,
+  .fourth
+  {
+    margin-left: 50px;
+  }
+  
+  .film_block .film_photo
+  {
+    width: 400px;
+    height: 266px;
+  }
+  
+  .film_text
+  {
+    width: 400px;
+  }
+  
+}
+
+@media screen and (max-width: 1023px) and (min-width: 901px)
+{
+  body
+  {
+    background-size: 1500px;
+  }
+  
+  header
+  {
+    width: 860px;
+  }
+  
+  .photo img
+  {
+    width: 250px;
+    height: 265px;
+  }
+  
+  .double_lists,
+  .icon-menu
+  {
+    display: none;
+  }
+  
+  .lists
+  {
+    width: 250px;
+  }
+  
+  .info
+  {
+    margin: -55px 0 0 59px;
+  }
+    
+  .about_me_text,
+  .hobby_text
+  {
+    width: 500px;
+  }
+
+  .main_container
+  {
+    width: 825px;
+    margin-top: 125px;
+  }
+  
+  .films
+  {
+    width: 750px;
+    margin: 0 auto;
+  }
+  
+  .film_block .film_photo
+  {
+    width: 350px;
+    height: 233px;
+  }
+  
+  .film_text
+  {
+    width: 350px;
+  }  
+  
+}
+
+@media screen and (max-width: 900px) and (min-width: 717px)
+{
+  body
+  {
+    background-size: 1500px;
+  }
+  
+  header
+  {
+    margin: 0;
+    width: 550px;
+  }
+  
+  .menu
+  {
+    display: none;
+  }
+  
+  .mobile_menu
+  {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+  }
+  
+  .menu_item
+  {
+    display: block;
+    width: 100%;
+    height: 38px;
+    font: 19px/32px "Georgia", serif;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px; 
+  }
+  
+  .menu_item:hover
+  {
+    background-color: #f0f0f0;  
+  }
+  
+  .menu_cancel
+  {
+    display: none;
+    cursor: pointer;
+    float: left;
+    background: url("../image/cancel.png") no-repeat;
+    margin: 10px 0 0 10px;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .menu_title
+  {
+    display: block;
+    height: 42px;
+    font: 19px/32px "Georgia", serif;
+    color: #333333;
+    text-transform: uppercase;
+    padding: 8px 0 0 50px;
+  }
+  
+  .icon-menu
+  {   
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    font: 30px;
+    color: #606060;
+    margin: 5px 0 0 5px;
+    padding: 10px;
+  }
+  
+  .quote
+  {
+    clear: both;    
+    background: url("../image/quotes.jpg") 377px 0px no-repeat;
+    margin: 0 80px 50px;
+  }
+  
+  blockquote
+  {
+    color: #848484;
+  }
+  
+  .quote_subtitle
+  {
+    color: #333333;  
+  }
+  
+  .main_container
+  {
+    width: 700px;
+    margin: 125px auto 0 auto;
+  }
+  
+  .photo 
+  {
+    margin-left: 80px;
+    height: 350px; 
+  }
+   
+  .lists
+  {
+    display: none; 
+  }
+  
+  .poet_list,
+  .film_list
+  {
+    display: inline-block;
+    width: 250px;
+    margin-left: 50px;
+  }
+  
+  .list li, 
+  .list
+  {
+    width: 200px;
+  }
+  
+  .double_lists
+  {
+    float: none;
+    width: 650px;
+    margin: 0 auto 30px;
+  }
+
+  .about_me,
+  .hobby,
+  .info
+  {
+    width: 560px;
+  }    
+  
+  .info
+  {
+    float: none;
+    margin: 0 auto 70px auto;
+  }
+  
+  .first,
+  .third
+  {
+    clear: both;
+    margin-left: 0;
+  }
+    
+  .film_block
+  {
+    margin-top: 25px;
+  }
+  
+  .interstellar,
+  .sherlock
+  {
+    margin-top: 0;
+  }
+  
+  .films
+  {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 716px) and (min-width: 0px)
+{
+  .lists
+  {
+    display: none;
+  } 
+  
+  body
+  {
+    background-size: 1500px;
+  } 
+    
+  header
+  {
+    height: 50px; 
+    width: 100%;
+  }
+  
+  .menu
+  {
+    display: none;
+  }
+  
+  .mobile_menu
+  {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+  }
+  
+  .menu_item
+  {
+    display: block;
+    width: 100%;
+    height: 38px;
+    font: 19px/32px "Georgia", serif;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px; 
+  }
+  
+  .menu_item:hover
+  {
+    background-color: #f0f0f0;  
+  }
+  
+  .menu_cancel
+  {
+    display: none;
+    cursor: pointer;
+    float: left;
+    background: url("../image/cancel.png") no-repeat;
+    margin: 10px 0 0 10px;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .menu_title
+  {
+    display: block;
+    height: 42px;
+    font: 19px/32px "Georgia", serif;
+    color: #333333;
+    text-transform: uppercase;
+    padding: 8px 0 0 50px;
+  }
+  
+  .icon-menu
+  {   
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    font: 30px;
+    color: #606060;
+    margin: 5px 0 0 5px;
+    padding: 10px;
+  }
+  
+   .main_container
+  {
+    width: 320px;
+    margin: 100px auto 0 auto;
+  } 
+  
+   .photo img
+  {
+    width: 320px;
+    height: auto; 
+  }
+  
+  .quote
+  {
+    clear: both;    
+    width: 320px;
+    background: url("../image/quotes.jpg") 220px 10px no-repeat;
+    background-size: 100px;
+    margin: 0 0 40px;
+  }
+  
+  blockquote
+  {
+    font-size: 19px;
+    line-height: 32px;
+    color: #848484;
+  }
+  
+  .quote_subtitle
+  {
+    font-size: 12px;
+    line-height: 32px;
+    color: #333333;  
+  }
+  
+  .about_me,
+  .hobby,
+  .info
+  {
+    width: 320px;
+  }    
+  
+  .info
+  {
+    float: none;
+    margin: 0 auto 50px auto;  
+  }
+  
+   .name_title
+  {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .about_me_text
+  {
+    width: 320px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 25px;
+  }
+
+  .hobby_title
+  {
+    font-size: 28px;
+    line-height: 38px;
+    color: #333333;
+    margin-top: 30px;
+  }
+
+  .hobby_text
+  {
+    width: 320px;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 15px 0 20px 0;
+  }
+
+  .link
+  {
+    width: 320px;
+    font-size: 14px;
+  }
+  
+  .double_lists
+  {
+    width: 320px;
+    margin-bottom: 50px;
+  }
+  
+  .list_title
+  {  
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .list
+  {
+    width: 320px;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px 0 30px 21px;    
+  }
+  
+  .films
+  {
+    width: 320px;
+  }
+  
+  .films_title
+  {
+    font-size: 30px;
+    width: 280px;
+    margin: 0 auto 35px;
+  }
+  
+  .film_block 
+  {
+    float: none;
+    width: 285px;
+    margin: 0 auto 40px;
+  }
+  
+  .film_block .film_photo
+  {
+    margin-bottom: 5px;  
+  }
+  
+  .film_block  .film_title
+  {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .film_text
+  {
+    width: 285px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  
+  form
+  {
+    width: 350px;
+    height: 700px;
+    margin: 0 auto 60px;
+    padding-top: 20px;
+  }
+  
+  .film_form
+  {
+    height: 520px;
+  }
+  
+  .left_line, 
+  .right_line
+  {
+    display: none;
+  }
+  
+  .cancel,
+  .film_cancel
+  {
+    margin-left: 300px;
+  }
+  
+  form h2
+  {
+    margin-left: 14px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  form .title
+  {
+    width: 230px;
+    margin: 0 auto 30px;
+  }
+  
+  .form_input
+  {
+    width: 320px;
+  }
+  
+  .name, 
+  .email, 
+  .country,
+  .radio,
+  .comment,
+  .url,
+  .film_name,
+  .description
+  {
+    margin-bottom: 15px;
+  }
+  
+  .name label, 
+  .email label, 
+  .country label, 
+  .sex, 
+  .comment label,
+  .url label,
+  .film_name label,
+  .description label
+  {
+    font-size: 18px;
+  }
+  
+  .men, 
+  .women
+  {
+    font-size: 16px;
+  }
+  
+  .name input, 
+  .email input,
+  .country select,
+  .url input,
+  .film_name input,
+  .description textarea
+  {
+    width: 302px;
+    height: 40px; 
+    font-size: 14px;
+  }
+  
+  .radio input
+  {
+    margin: 0 10px 0 0;
+  }
+  
+  .country select
+  {
+    width: 320px;
+    height: 44px;
+    background-position: 285px 17px;
+    background-size: 16px;
+  }
+  
+  .comment textarea,
+  .description textarea
+  {
+    width: 302px;
+    height: 100px;
+    margin-bottom: 0;
+  }
+  
+  footer
+  {
+    text-align: center;
+  }
+  
+}
+
+@media screen 
+{
+  .visibility_none
+  {
+    display: none;
+  }
+  
+  .visibility_block
+  {
+    display: block;
+  }
+  
+  .border_red
+  {
+    border: 2px solid #ff0000;
+  }
+
+  .border_gray
+  {
+    border: 2px solid #c9c9c9;
+  }
+
+  .border_green
+  {
+    border: 2px solid #15a98c;
+  }  
+}
