@@ -348,7 +348,7 @@ form h2
 form .title
 {
   float: left;
-  width: 220px;
+  width: 250px;
   margin: 0 59px 33px;
 }
 
@@ -819,7 +819,7 @@ form
   border-radius: 10px;
   width: 660px;
   height: 872px;
-  margin: 0 auto 0;
+  margin: 0 auto 10px;
   padding-top: 30px;
   background-color: #ffffff; 
   overflow-y: scroll;
@@ -828,7 +828,7 @@ form
 
 #form {
   min-height:300px;
-  height:600px;
+  height:800px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -876,7 +876,7 @@ form h2
 form .title
 {
   float: left;
-  width: 220px;
+  width: 300px;
   margin: 0 59px 33px;
 }
 
@@ -887,7 +887,7 @@ form .title
 
 .form_input
 {
-  margin: 0 auto; 
+  margin: 10px auto; 
   width: 540px;
 }
 
