@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="image/favicon.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/> 
     <link rel="stylesheet" href="css/contacts.css" />
     <link rel="stylesheet" href="css/adaptive_style.css" />
@@ -36,45 +38,53 @@
     <div class="main_container">  
       <div class="lists">
         <div class="poet_list">
-          <span class="list_title">Наши контакты:</span>
-          <ul class="list">
-            <li>Э. Асадов</li>
-            <li>С. Есенин</li>
-            <li>В. Маяковский</li>
-            <li>И. Бродский</li>
-          </ul>
+          <span class="list_title">Офис VolgatechMusic</span><br>
+          Наименование: ООО “VolgatechMusic”<br>
+          Адрес: г Йошкар-Ола, ул. Гагарина, д. 25<br>
+          ОГРН: 412602454694529
         </div>
         <div class="film_list">
-          <span class="list_title">Любимые фильмы:</span>
-          <ol class="list">
-            <li>Интерстеллар</li>
-            <li>Шерлок Холмс</li>
-            <li>Живое</li>
-            <li>Иллюзия обмана</li>
-          </ol>
+          <span class="list_title">Электронная почта</span><br>
+          Техническая поддержка: <a href="mailto:support@VolgatechMusic.ru">support@VolgatechMusic.ru</a><br>
+          Сотрудничество: <a href="mailto:partner@VolgatechMusic.ru">partner@VolgatechMusic.ru</a><br>
         </div>
-      </div>     
+      </div>
       <div class="double_lists">
         <div class="poet_list">
-          <span class="list_title">Любимые поэты:</span>
-          <ul class="list">
-            <li>Э. Асадов</li>
-            <li>С. Есенин</li>
-            <li>В. Маяковский</li>
-            <li>И. Бродский</li>
-          </ul>
+          <span class="list_title">Офис VolgatechMusic</span><br>
+          Наименование: ООО “VolgatechMusic”<br>
+          Адрес: г Йошкар-Ола, ул. Гагарина, д. 25<br>
+          ОГРН: 412602454694529
         </div>
         <div class="film_list">
-          <span class="list_title">Любимые фильмы:</span>
-          <ol class="list">
-            <li>Интерстеллар</li>
-            <li>Шерлок Холмс</li>
-            <li>Живое</li>
-            <li>Иллюзия обмана</li>
-          </ol>
+          <span class="list_title">Электронная почта</span><br>
+          Техническая поддержка: <a href="mailto:support@VolgatechMusic.ru">support@VolgatechMusic.ru</a><br>
+          Сотрудничество: <a href="mailto:partner@VolgatechMusic.ru">partner@VolgatechMusic.ru</a><br>
         </div>
       </div>
       <div class="clear"></div> 
+      <form id="film_form" class="film_form">
+        <div class="title">
+          <h2 class="add_title">Есть вопрос?</h2> 
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="form_input">
+          <div class="url">
+            <label for="url">Имя:<span class="star">&#42;</span></label>
+            <input type="text" minlength="2" id ="url" name="url" class="input" required />
+          </div>
+          <div class="film_name">
+            <label for="filmName">Ваш email:<span class="star">&#42;</span></label>
+            <input type="email" id="filmName" name="film_name" class="input" required />
+          </div>
+          <div class="description">
+            <label for="description">Вопрос:<span class="star">&#42;</span></label>
+            <textarea id="description" name="description" class="input" required></textarea>
+          </div>
+          <input class="film_send" id="filmSend" type="submit" value="Отправить" />
+        </div>	  
+      </form>
     </div>
     <div>
     <footer class="footer_wrapper">
@@ -85,6 +95,6 @@
     </div>
     <div class="gray_background" id="back"></div>	  
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/scriptJQ.js"></script>
+    <!-- <script type="text/javascript" src="js/scriptJQ.js"></script> -->
   </body>
 </html>

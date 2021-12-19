@@ -75,6 +75,20 @@ header
   color: #15a98c; 
 }
 
+.poet_list, .film_list
+{  
+  color: #555555;
+  font: 19px/36px "Georgia";
+}
+
+.film_list {
+  margin-top: 20px;
+}
+
+.lists a, .double_lists a {
+  color: #15a98c;
+}
+
 .list
 {
   width: 330px;
@@ -97,8 +111,214 @@ footer
 
 .footer_wrapper
 {
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+
+form
+{
+  /* display: none;
+  position: fixed;
+  top: 5%;
+  left: 0px;
+  right: 0px; */
+  border-radius: 10px;
+  width: 660px;
+  height: 872px;
+  /* margin: 0 auto 0; */
+  padding-top: 30px;
+  background-color: #ffffff; 
+  z-index: 1;
+}
+
+.film_form
+{
+  height: 670px;
+  top: 15%;
+}
+
+.cancel,
+.film_cancel
+{
+  cursor: pointer;
+  background: url("../image/cancel.png") no-repeat;
+  margin-left: 604px;
+  width: 28px;
+  height: 28px;
+}
+
+
+.left_line, 
+.right_line
+{
+  float: left;
+  width: 197px;
+  margin-top: 22px;
+}
+
+.left_line,
+.right_line
+{
+  display: none;
+}
+
+
+form h2
+{
+  float: left;
+  font: 300 35px/42px "Open Sans", sans-serif;
+  color: #333333;
+  margin-top: 11px; 
+}
+
+form .title
+{
+  float: left;
+  width: 220px;
+  margin: 0 0 33px;
+}
+
+.add_title
+{
+  width: 288px;
+}
+
+.form_input
+{
+  /* margin: 0 auto;  */
+  width: 540px;
+}
+
+.name,
+.url
+{
+  margin-bottom: 21px;
+}
+
+.comment,
+.email,
+.film_name,
+.description
+{
+  margin-bottom: 22px;
+}
+
+.country
+{
+  margin-bottom: 39px;
+}
+
+.radio
+{
+  margin-bottom: 35px;
+}
+
+.name label, 
+.email label, 
+.country label, 
+.sex, 
+.comment label,
+.url label,
+.film_name label,
+.description label
+{
+  font: 400 20px/32px "Open Sans", sans-serif;
+  color: #333333;
+  display: block;
+}
+
+.star
+{
+  color: #ee0707;
+  margin-left: 4px;
+}
+
+.radio input
+{
+  margin: 16px 9px 0 0;
+}
+
+.men, 
+.women
+{
+  font: 400 18px/32px "Open Sans", sans-serif;
+  color: #333333;   
+  margin-right: 35px;
+}
+
+/*.name input, 
+.email input, 
+.country select, 
+.comment textarea,
+.url input,
+.film_name input,
+.description textarea*/
+.input
+{
+  margin-top: 5px;
+  width: 521px;
+  height: 39px;
+  border-radius: 3px;
+  border: 2px solid #c9c9c9;
+  padding-left: 12px;
+  font: 400 18px/32px "Open Sans", sans-serif;
+  color: #555555;
+}
+
+.country select
+{
+  height: 51px;
+  width: 540px;
+  background: url("../image/arrow_down.png") 498px 18px no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand 
+{ 
+  display: none; 
+}
+
+.comment textarea,
+.description textarea
+{
+  height: 146px;
+  margin: 5px 0 25px 0;
+  resize: none;
+  overflow: hidden;
+}
+
+/*.name_input:focus, 
+.email_input:focus, 
+.country_select:focus, 
+.comment_textarea:focus,
+.url_input:focus,
+.film_name_input:focus,
+.description_textarea:focus*/
+.input:focus
+{
+  outline: none;
+  border: 2px solid #15a98c;
+}
+
+.send_button,
+.film_send
+{
+  width: 220px;
+  height: 50px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #15a98c;
+  font: 19px/32px "Georgia", serif;
+  color: #f5f5f5;
+}
+
+.send_button:hover,
+.film_send:hover
+{
+  background-color: #098d71;
 }
