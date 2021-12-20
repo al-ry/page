@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="image/favicon.png"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/> 
-    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="stylesheet" href="css/services.css" />
     <link rel="stylesheet" href="css/adaptive_style.css" />
     <link rel="stylesheet" href="font/fontello/animation.css" type="text/css" />
     <link rel="stylesheet" href="font/fontello/fontello.css" type="text/css" />
@@ -36,45 +36,70 @@
         </ul>
       </header> 
     <div class="main_container">  
-      <div class="lists">
-        <div class="poet_list">
-          <span class="list_title">Подписки на музыку:</span>
-          <ul class="list">
-            <li>Пробная на 3 месяца - бесплатно</li>
-            <li>Standart - 150 рублей месяц</li>
-            <li>Premium - 300 рублей месяц</li>
-          </ul>
+      <div class="main_films">
+        <div class="films" id="filmBlock">
+          <h2 class="films_title" id="mainFilms">Подписка на музыку</h2>
+          <div class="interstellar film_block first_of_all">
+            <img class="film_photo" src="image/trial.jpg" alt="interstellar" />
+            <h3 class="film_title">Trial - бесплатно</h3>
+            <p class="film_text">
+              3 месяца бесплатного пользования возможностями Standard аккаунта.
+            </p>
+          </div>
+          <div class="sherlock film_block second">
+            <img class="film_photo" src="image/standard.jpg" alt="sherlock" />
+            <h3 class="film_title">Standard - 149 руб.</h3>
+            <p class="film_text">
+              Доступ к миллионам треков нашей базы, отсутствие рекламы, прослушивание без ограничений.
+            </p>
+          </div>
+          <div class="life film_block third">
+            <img class="film_photo" src="image/premium.jpg" alt="life" />
+            <h3 class="film_title">Premium - 219 руб.</h3> 
+            <p class="film_text">
+              Все возможности Standard аккаунта, а также доступ к высокому качеству звука и возможность
+              скачивать музыку на устройство для оффлайн воспроизведения.
+            </p>
+          </div>
+          <div class="clear"></div>
+          <div id="newFilms"></div>
+          <div class="clear"></div>
         </div>
-        <div class="film_list">
-          <span class="list_title">Реклама в приложении:</span>
-          <ol class="list">
-            <li>Интерстеллар</li>
-            <li>Шерлок Холмс</li>
-            <li>Живое</li>
-            <li>Иллюзия обмана</li>
-          </ol>
-        </div>
-      </div>     
-      <div class="double_lists">
-        <div class="poet_list">
-          <span class="list_title">Подписки на музыку:</span>
-          <ul class="list">
-            <li>Пробная на 3 месяца - бесплатно</li>
-            <li>Standart - 150 рублей месяц</li>
-            <li>Premium - 300 рублей месяц</li>
-          </ul>
-        </div>
-        <div class="film_list">
-          <span class="list_title">Реклама в приложении:</span>
-          <ol class="list">
-            <li>Интерстеллар</li>
-            <li>Шерлок Холмс</li>
-            <li>Живое</li>
-            <li>Иллюзия обмана</li>
-          </ol>
-        </div>
-      </div>
+      </div>   
       <div class="clear"></div> 
+      <form id="form">      
+        <div class="title">
+          <hr class="left_line" />
+          <h2>Закажите подписку:</h2>
+          <hr class="right_line" />  
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="form_input">
+          <div class="name">
+            <label for="name">Ваше имя<span class="star">&#42;</span></label>
+            <input type="text" id ="name" name="name" class="input" required />
+          </div>
+          <div class="email">
+            <label for="email">Ваш email<span class="star">&#42;</span></label>
+            <input type="text" id="email" name="email" class="input" required />
+          </div>
+          <div class="radio">
+            <label class="subscription">Подписка</label>
+            <input type="radio" id="trial" name="subscription" value="trial" />
+            <label for="trial" class="trial">Trial</label>
+            <input type="radio" id="standard" name="subscription" value="standard" />
+            <label for="standard" class="standard">Standard</label>
+            <input type="radio" id="premium" name="subscription" value="premium" />
+            <label for="premium" class="premium">Premium</label>
+          </div>
+          <div class="comment">
+            <label for="comment">Ваше сообщение<span class="star">&#42;</span></label>
+            <textarea id="comment" name="comment" class="input" required></textarea>
+          </div>
+          <input class="send_button" id="sendButton" type="submit" value="Отправить" />
+        </div>
+      </form>    
     </div>
     <footer class="footer_wrapper">
       <span>
