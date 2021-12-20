@@ -1,9 +1,36 @@
 window.onload = function(){
-  // moreFilms = document.getElementById("filmsLink");
-  // moreFilms.onclick = function(event){
-  //   event.preventDefault()
-  //   showFilms(moreFilms);
-  // }
+   moreFilms = document.getElementById("filmsLink");
+   moreFilms.onclick = function(event){
+     event.preventDefault()
+     showFilms(moreFilms);
+   }
+
+  
+  
+   form = document.getElementById("form");
+   formButton = document.getElementById("sendButton");
+   formButton.onclick = function(){
+     validate(form)
+   }
+  
+   linkOnForm = document.getElementById("link");
+   linkOnForm.onclick = function(){
+     document.getElementById("form").style.display = "block";
+     document.getElementById("back").style.display = "block";
+   }
+  
+   document.getElementById("canсel").onclick = cancelForm;
+   document.getElementById("back").onclick = cancelForm;
+  
+   document.body.onclick = function(event){ 
+     var form = document.getElementById("form");
+     if ((event.target == form.name) || (event.target == form.email) 
+         || (event.target == form.comment)){
+       clickInput(event.target);
+     }
+     borderInput(event.target, form);  
+   }
+}
 
   $(function () {
     $('#film_form').submit(function () {
@@ -14,33 +41,6 @@ window.onload = function(){
       return false
     })
   })
-  
-  
-  // form = document.getElementById("form");
-  // formButton = document.getElementById("sendButton");
-  // formButton.onclick = function(){
-  //   validate(form)
-  // }
-  
-  // linkOnForm = document.getElementById("link");
-  // linkOnForm.onclick = function(){
-  //   document.getElementById("form").style.display = "block";
-  //   document.getElementById("back").style.display = "block";
-  // }
-  
-  // document.getElementById("canсel").onclick = cancelForm;
-  // document.getElementById("back").onclick = cancelForm;
-  
-  // document.body.onclick = function(event){ 
-  //   var form = document.getElementById("form");
-  //   if ((event.target == form.name) || (event.target == form.email) 
-  //       || (event.target == form.comment)){
-  //     clickInput(event.target);
-  //   }
-  //   borderInput(event.target, form);  
-  // }
-}
-
 function showFilms(elem){  
   blockFilms = document.getElementById("moreFilms");
   blockFilms.style.display = "block";
